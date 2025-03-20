@@ -54,7 +54,7 @@ const navName = '<João/>'
   left: -50%;
   width: 200%;
   height: 200%;
-  background: linear-gradient(0deg, transparent, transparent 30%, #708cb8);
+  background: linear-gradient(0deg, transparent, transparent 30%, var(--main-color));
   transform: rotate(-45deg);
   transition: all 0.5s ease;
   opacity: 0;
