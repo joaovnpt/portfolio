@@ -1,20 +1,31 @@
 <script setup>
 import ProfileComponent from '@/components/ProfileComponent.vue'
 import ProfilePicture from '@/components/ProfilePicture.vue'
+import SkillsComponent from '@/components/SkillsComponent.vue'
 </script>
 
 <template>
-  <main class="main">
-    <ProfileComponent />
-    <ProfilePicture class="profile-picture" />
-  </main>
-  <div class="arrow-down"><img src="../assets/seta-para-baixo.svg" alt="" /></div>
+  <div class="container">
+    <main class="main">
+      <div class="profile-wrapper">
+        <ProfileComponent />
+        <ProfilePicture class="profile-picture" />
+      </div>
+      <div class="arrow-down"><img src="../assets/seta-para-baixo.svg" alt="" /></div>
+    </main>
+    <div class="skills">
+      <SkillsComponent />
+    </div>
+  </div>
 </template>
 
 <style scoped>
 .main {
-  padding: 50px 150px 150px 150px;
-  height: 400px;
+  padding: 50px 150px 0 150px;
+  height: 100vh;
+}
+.profile-wrapper {
+  height: 500px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -28,7 +39,7 @@ import ProfilePicture from '@/components/ProfilePicture.vue'
   display: flex;
   justify-content: center;
   align-items: center;
-  position: fixed;
+  position: absolute;
   top: 90%;
   left: 50%;
   transform: translate(-50%, -50%);

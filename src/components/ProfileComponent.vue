@@ -1,7 +1,7 @@
 <script setup></script>
 
 <template>
-  <div class="container">
+  <div class="profile-container">
     <h1 class="presentation">Hi, I'm João</h1>
     <h2>Student and developer</h2>
     <p>I create solid prototypes and websites with great user experiences.</p>
@@ -24,7 +24,7 @@
 </template>
 
 <style scoped>
-.container {
+.profile-container {
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
