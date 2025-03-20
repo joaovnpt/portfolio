@@ -32,6 +32,6 @@
   z-index: -1;
 }
 .pfp-effect img {
-  width: 500px;
+  width: 580px;
 }
 </style>
