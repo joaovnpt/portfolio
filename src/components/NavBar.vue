@@ -5,10 +5,10 @@ const navName = '<João/>'
 <template>
   <div class="container">
     <div class="nav-container">
-      <a class="name">{{ navName }}</a>
-      <a href="" class="nav-item">Skills</a>
-      <a href="" class="nav-item">Projects</a>
-      <a href="" class="nav-item">About</a>
+      <router-link to="/" class="name">{{ navName }}</router-link>
+      <router-link to="/#skills"><a href="" class="nav-item">Skills</a></router-link>
+      <router-link to="/#projects"><a href="" class="nav-item">Projects</a></router-link>
+      <a href="/development-area" class="nav-item">About</a>
     </div>
   </div>
 </template>

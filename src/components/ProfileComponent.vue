@@ -6,7 +6,7 @@
     <h2>Student and developer</h2>
     <p>I create solid prototypes and websites with great user experiences.</p>
     <div class="more-about squishy-classic">
-      <a href="/">More about me</a>
+      <router-link to="/development-area">More about me</router-link>
       <svg
         width="24"
         height="24"
