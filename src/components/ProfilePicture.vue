@@ -2,10 +2,10 @@
 
 <template>
   <div class="profile-container">
-    <img src="../../public/pfp sem fndo.png" alt="" />
+    <img src="/pfp sem fndo.png" alt="" />
   </div>
   <div class="pfp-effect">
-    <img src="../../public/pfp fx.png" alt="" />
+    <img src="/pfp fx.png" alt="" />
   </div>
 </template>
 
