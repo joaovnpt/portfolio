@@ -1,6 +1,7 @@
 <script setup>
 import ProfileComponent from '@/components/ProfileComponent.vue'
 import ProfilePicture from '@/components/ProfilePicture.vue'
+import ProjectsComponent from '@/components/ProjectsComponent.vue'
 import SkillsComponent from '@/components/SkillsComponent.vue'
 </script>
 
@@ -11,10 +12,15 @@ import SkillsComponent from '@/components/SkillsComponent.vue'
         <ProfileComponent />
         <ProfilePicture class="profile-picture" />
       </div>
-      <div class="arrow-down"><img src="../assets/seta-para-baixo.svg" alt="" /></div>
+      <div class="arrow-down">
+        <router-link to="#skills"><img src="/seta-para-baixo.svg" alt="" /></router-link>
+      </div>
     </main>
-    <div class="skills">
+    <div class="skills" id="skills">
       <SkillsComponent />
+    </div>
+    <div class="projects" id="projects">
+      <ProjectsComponent />
     </div>
   </div>
 </template>
