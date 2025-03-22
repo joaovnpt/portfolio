@@ -5,21 +5,23 @@
     <h1 class="presentation">Hi, I'm João</h1>
     <h2>Student and developer</h2>
     <p>I create solid prototypes and websites with great user experiences.</p>
-    <div class="more-about squishy-classic">
-      <router-link to="/development-area">More about me</router-link>
-      <svg
-        width="24"
-        height="24"
-        viewBox="0 0 24 24"
-        fill="none"
-        xmlns="http://www.w3.org/2000/svg"
-      >
-        <path
-          d="M23.0677 11.9929L18.818 7.75739L17.4061 9.17398L19.2415 11.0032L0.932469 11.0012L0.932251 13.0012L19.2369 13.0032L17.4155 14.8308L18.8321 16.2426L23.0677 11.9929Z"
-          fill="currentColor"
-        />
-      </svg>
-    </div>
+    <router-link to="/development-area" class="development-area-link"
+      ><div class="more-about squishy-classic">
+        More about me
+        <svg
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M23.0677 11.9929L18.818 7.75739L17.4061 9.17398L19.2415 11.0032L0.932469 11.0012L0.932251 13.0012L19.2369 13.0032L17.4155 14.8308L18.8321 16.2426L23.0677 11.9929Z"
+            fill="currentColor"
+          />
+        </svg>
+      </div>
+    </router-link>
   </div>
 </template>
 
@@ -29,6 +31,10 @@
   flex-direction: column;
   gap: 0.5rem;
   width: 400px;
+}
+
+.development-area-link {
+  text-decoration: none;
 }
 
 .more-about {
