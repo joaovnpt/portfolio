@@ -3,6 +3,17 @@ import ProfileComponent from '@/components/ProfileComponent.vue'
 import ProfilePicture from '@/components/ProfilePicture.vue'
 import ProjectsComponent from '@/components/ProjectsComponent.vue'
 import SkillsComponent from '@/components/SkillsComponent.vue'
+import { onMounted } from 'vue'
+import { useRouter } from 'vue-router'
+
+const router = useRouter()
+
+onMounted(() => {
+  router.push('/')
+  setTimeout(() => {
+    window.scrollTo({ top: 0, behavior: 'instant' })
+  }, 1)
+})
 </script>
 
 <template>
