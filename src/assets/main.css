@@ -2,7 +2,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Geo:ital@0;1&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 
 :root {
-    --main-color: #384557;
+    --main-color: #415065;
+    --main-color-100: #586e8c;
+    --main-color-200: #415166;
     --main-text-color: #1d2531;
 }
 
